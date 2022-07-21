@@ -2,31 +2,31 @@ public class VariablesTheme {
     public static void main(String[] args) {
         System.out.println("1: Создание переменных и вывод их значений на консоль");
 
-        byte keybordCount = 1;
-        short printerCount = 2;
-        int ramCount = 8;
-        long monitorCount = 3L;
-        float cpuCount = 2.20F;
-        double intelCore = 7.3632;
+        byte countKeybord = 1;
+        short countPrinter = 2;
+        int countRam = 8;
+        long countMonitor = 3L;
+        float countCpu = 2.20F;
+        double countIntelCore = 7.3632;
         char series = 'S';
         boolean isMouse = true;
 
-        System.out.println("byte = " + keybordCount);
-        System.out.println("short = " + printerCount);
-        System.out.println("int = " + ramCount);
-        System.out.println("long = " + monitorCount);
-        System.out.println("float = " + cpuCount);
-        System.out.println("double = " + intelCore);
-        System.out.println("char = " + series);
-        System.out.println("boolean = " + isMouse);
+        System.out.println("количество клавиатур = " + countKeybord);
+        System.out.println("количество принтеров = " + countPrinter);
+        System.out.println("количество оперативки = " + countRam);
+        System.out.println("количество мониторов = " + countMonitor);
+        System.out.println("центральный процессор = " + countCpu);
+        System.out.println("Intel core = " + countIntelCore);
+        System.out.println("серия = " + series);
+        System.out.println("мышка = " + isMouse);
 
         System.out.println("\n2: Расчет стоимости товара со скидкой");
 
-        short product1 = 100;
-        short product2 = 200;
+        short priceGoodsX = 100;
+        short priceGoodsY = 200;
         double percent = 0.11;
-        double discount = (product1 + product2) * percent;
-        double discountPrice = (product1 + product2) - discount;
+        double discount = (priceGoodsX + priceGoodsY) * percent;
+        double discountPrice = (priceGoodsX + priceGoodsY) - discount;
         System.out.println("сумма скидок = " + discount);
         System.out.println("общая стоимость со скидкой = " + discountPrice);
 
@@ -75,49 +75,49 @@ public class VariablesTheme {
 
         System.out.println("\n6: Вывод символов и их кодов");
 
-        int codeChar1 = 35;
-        int codeChar2 = 38;
-        int codeChar3 = 64;
-        int codeChar4 = 94;
-        int codeChar5 = 95;
-        System.out.println(codeChar1 + " = " + (char) codeChar1 + " обратно " + (int) ((char) codeChar1));
-        System.out.println(codeChar2 + " = " + (char) codeChar2 + " обратно " + (int) ((char) codeChar2));
-        System.out.println(codeChar3 + " = " + (char) codeChar3 + " обратно " + (int) ((char) codeChar3));
-        System.out.println(codeChar4 + " = " + (char) codeChar4 + " обратно " + (int) ((char) codeChar4));
-        System.out.println(codeChar5 + " = " + (char) codeChar5 + " обратно " + (int) ((char) codeChar5));
+        char codeChar1 = 35;
+        char codeChar2 = 38;
+        char codeChar3 = 64;
+        char codeChar4 = 94;
+        char codeChar5 = 95;
+        System.out.println(codeChar1 + " = " + (int) codeChar1);
+        System.out.println(codeChar2 + " = " + (int) codeChar2);
+        System.out.println(codeChar3 + " = " + (int) codeChar3);
+        System.out.println(codeChar4 + " = " + (int) codeChar4);
+        System.out.println(codeChar5 + " = " + (int) codeChar5);
 
-        System.out.println("\n7: Произведение и сумма цифр числа 345");
-        int number = 345;
-        int hundred = number / 100;
-        int ten = (number / 10) % 10;
-        int unit = number % 10;
-        int sum = hundred + ten + unit;
-        int multiplication = hundred * ten * unit;
+        System.out.println("\n7: Произведение и сумма цифр числа");
+        int srcNumber = 345;
+        System.out.println("число = " + srcNumber);
+        int hundred = srcNumber / 100;
+        int ten = (srcNumber / 10) % 10;
+        int ones = srcNumber % 10;
+        int sum = hundred + ten + ones;
+        int mult = hundred * ten * ones;
         System.out.println("sum = " + sum);
-        System.out.println("multiplication = " + multiplication);
+        System.out.println("multiplication = " + mult);
 
         System.out.println("\n8: Вывод на консоль ASCII-арт Дюка");
-        char ch1 = 95;
-        char ch2 = 92;
-        char ch3 = 47;
-        char ch4 = 40;
-        char ch5 = 41;
-        char ch6 = 32;
-        System.out.println(ch6 + "" + ch6 + "" + ch6 + "" + ch6 + "" + ch6 + "" + ch3 + "" + ch2);
-        System.out.println(ch6 + "" + ch6 + "" + ch6 + "" + ch6 + "" + ch3 + "" + ch6 + "" + ch6 + "" + ch2);
-        System.out.println(ch6 + "" + ch6 + "" + ch6 + "" + ch3 + "" + ch1 + "" + ch4 + "" + ch5 + "" + ch6 + "" + ch2);
-        System.out.println(ch6 + "" + ch6 + "" + ch3 + "" + ch6 + "" + ch6 + "" + ch6 + "" + ch6 + "" + ch6 + "" + ch6 + "" + ch2);
-        System.out.println(ch6 + "" + ch3 + "" + ch1 + "" + ch1 + "" + ch1 + "" + ch1 + "" + ch3 + "" + ch2 + "" + ch1 + "" + ch1 + "" + ch2);
+        char underscore = '_';
+        char backSlash = '\\';
+        char slash = '/';
+        char parenthesesLeft = '(';
+        char parenthesesRight = ')';
+        char space = ' ';
+        System.out.println("" + space + space + space + space + space + slash + backSlash);
+        System.out.println("" + space + space + space + space + slash + space + space + backSlash);
+        System.out.println("" + space + space + space + slash + underscore + parenthesesLeft + parenthesesRight + space + backSlash);
+        System.out.println("" + space + space + slash + space + space + space + space + space + space + backSlash);
+        System.out.println("" + space + slash + underscore + underscore + underscore + underscore + slash + backSlash + underscore + underscore + backSlash);
 
         System.out.println("\n9: Отображение количества сотен, десятков и единиц числа");
-        int n = 123;
-        int hundreds = (n / 100);
-        int tens = (n / 10) % 10;
-        int units = n % 10;
-        System.out.println("число " + n + '\n' + "сотен = " + hundreds + " десятков = " + tens + " единиц = " + units);
+        int hundreds = (srcNumber / 100);
+        int tens = (srcNumber / 10) % 10;
+        int units = srcNumber % 10;
+        System.out.println("число " + srcNumber + '\n' + "сотен = " + hundreds + " десятков = " + tens + " единиц = " + units);
 
         System.out.println("\n10: Преобразование секунд");
         int second = 86399;
-        System.out.println("ЧЧ : " + (second / 60 / 60) + " ММ : " + (second / 60 % 60) + " CC : " + (second % 60));
+        System.out.println("ЧЧ : " + (second / 3600) + " ММ : " + (second / 60 % 60) + " CC : " + (second % 60));
     }
 }
