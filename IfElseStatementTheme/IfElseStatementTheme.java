@@ -41,7 +41,7 @@ public class IfElseStatementTheme {
 
         if (max > min) {
             System.out.println("max = " + max);
-        } 
+        }
 
         if (min > max) {
             System.out.println("max = " + min);
@@ -109,7 +109,7 @@ public class IfElseStatementTheme {
         }
 
         System.out.println("\n5: Определение буквы, числа или символа по их коду");
-        
+
         char someChar = '\u0057';
         int code = someChar;
 
@@ -122,7 +122,7 @@ public class IfElseStatementTheme {
         } else {
             System.out.println(code + " не число и не буква");
         }
-        
+
         System.out.println("\n6: Определение суммы вклада и начисленных банком %");
 
         double percent = 0;
@@ -175,7 +175,7 @@ public class IfElseStatementTheme {
         int saleProducrInYear = 156000;
         int costPriceInYear = 108000;
         int profitInYear = saleProducrInYear - (rentRoomInYear + costPriceInYear);
-        
+
         if (profitInYear > 0) {
             System.out.println("прибыль за год: " + "+" + profitInYear);
         } else {
