@@ -36,22 +36,18 @@ public class IfElseStatementTheme {
 
         System.out.println("\n2: Поиск max и min числа");
 
-        int min = 5;
-        int max = 2;
+        int min = 2;
+        int max = 5;
 
         if (max > min) {
             System.out.println("max = " + max);
-        }
-
-        if (min > max) {
+        } else {
             System.out.println("max = " + min);
         }
 
         if (min < max) {
             System.out.println("min = " + min);
-        }
-
-        if (max < min) {
+        } else {
             System.out.println("min = " + max);
         }
 
@@ -62,17 +58,13 @@ public class IfElseStatementTheme {
         if (number != 0) {
             if (number % 2 == 0) {
                 System.out.println("четное");
-            }
-
-            if (number % 2 != 0) {
+            } else {
                 System.out.println("нечетное");
             }
 
             if (number < 0) {
                 System.out.println("отрицательное");
-            }
-
-            if (number > 0) {
+            } else {
                 System.out.println("положительное");
             }
         } else {
@@ -82,7 +74,6 @@ public class IfElseStatementTheme {
         System.out.println("\n4: Поиск одинаковых цифр в числах");
         int number2 = 231;
         int count1 = 1;
-        int count2 = 1;
         int hundred = number / 100;
         int ten = (number / 10) % 10;
         int ones = number % 10;
@@ -111,23 +102,22 @@ public class IfElseStatementTheme {
         System.out.println("\n5: Определение буквы, числа или символа по их коду");
 
         char someChar = '\u0057';
-        int code = someChar;
 
-        if (code > 64 && code <= 90) {
-            System.out.println(code + " Это большая буква " + someChar);
-        } else if (code > 96 && code <= 122) {
-            System.out.println(code + " Это маленькая буква " + someChar);
-        } else if (code > 48 && code < 58) {
-            System.out.println(code + " Это число ");
+        if (someChar > 64 && someChar <= 90) {
+            System.out.println("Это большая буква " + someChar);
+        } else if (someChar > 96 && someChar <= 122) {
+            System.out.println("Это маленькая буква " + someChar);
+        } else if (someChar > 48 && someChar < 58) {
+            System.out.println(" Это число " + someChar);
         } else {
-            System.out.println(code + " не число и не буква");
+            System.out.println("не число и не буква" + someChar);
         }
 
         System.out.println("\n6: Определение суммы вклада и начисленных банком %");
 
         double percent = 0;
-        int money = 3000000;
-        int profit = 0;
+        int money = 300000;
+        double profit = 0;
 
         if (money < 100000) {
             percent = 0.05;
@@ -167,6 +157,7 @@ public class IfElseStatementTheme {
             System.out.println("5 - " + "Programming");
         }
 
+        System.out.println((double) (14) / 4 + " - Average rating");
         System.out.println((ratingByProgramming + ratingByHistory) / 2 + " - Average score");
 
         System.out.println("\n8: Расчет прибыли");
