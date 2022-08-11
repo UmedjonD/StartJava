@@ -66,6 +66,56 @@ public class CyclesTheme {
 		for (int i = 0; i < 3; i++) {
 			System.out.print("0" + "\t");
 		}
-		
+
+		System.out.println("\n5: Проверка количества единиц на четность");
+
+		number = 3141591;
+		count = 0;
+		char[] chars = ("" + number).toCharArray();
+		index = 0;
+		while (index < chars.length) {
+			if (chars[index] == '1') {
+				count++;
+			}
+			index++;
+		}
+
+		if (count % 2 == 0) {
+			System.out.println("число X содержит " + count + " четное количество единиц");
+		} else {
+			System.out.println("число X содержит " + count + " нечетное количество единиц");
+		}
+
+		System.out.println("\n6: Проверка количества единиц на четность\n");
+
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j < 10; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+
+		int j = 5;
+		index = 5;
+		while (index > 0) {
+			while (j > 0) {
+				System.out.print("#");
+				j--;
+			}
+			index--;
+			j = index;
+			System.out.println();
+		}
+
+		index = 5;
+		j = 0;
+		do {
+			do {
+				System.out.print("$");
+			} while (j < 0);
+
+			index--;
+
+		} while(index > 0);
 	}
 }

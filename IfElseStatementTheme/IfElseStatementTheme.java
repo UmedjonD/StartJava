@@ -117,7 +117,6 @@ public class IfElseStatementTheme {
 
         double percent = 0;
         int money = 300000;
-        double profit = 0;
 
         if (money < 100000) {
             percent = 0.05;
@@ -127,7 +126,7 @@ public class IfElseStatementTheme {
             percent = 0.1;
         }
 
-        profit = (int) (money * percent);
+        double profit = (int) (money * percent);
         System.out.println("сумму вклада = " + money);
         System.out.println("начисленный % = " + percent);
         System.out.println("итоговую сумму с % = " + (money + profit));
@@ -136,6 +135,8 @@ public class IfElseStatementTheme {
 
         int ratingByProgramming = 91;
         int ratingByHistory = 59;
+        int rating1 = 2;
+        int rating2 = 4;
 
         if (ratingByHistory <= 60) {
             System.out.println("2 - " + "History");
@@ -157,7 +158,7 @@ public class IfElseStatementTheme {
             System.out.println("5 - " + "Programming");
         }
 
-        System.out.println((double) (14) / 4 + " - Average rating");
+        System.out.println((rating1 + rating2) / 2 + " - Average rating");
         System.out.println((ratingByProgramming + ratingByHistory) / 2 + " - Average score");
 
         System.out.println("\n8: Расчет прибыли");
