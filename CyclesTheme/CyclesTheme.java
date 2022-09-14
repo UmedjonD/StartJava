@@ -3,13 +3,13 @@ public class CyclesTheme {
         System.out.println("\n1: Подсчет суммы четных и нечетных чисел");
 
         int sumEven = 0;
-        int odd = 0;
+        int sumOdd = 0;
         int counter = -10;
         do {
             if (counter % 2 == 0) {
                 sumEven += counter;
             } else {
-                odd += counter;
+                sumOdd += counter;
             }
             counter++;
         } while (counter <= 21);
@@ -39,7 +39,7 @@ public class CyclesTheme {
             min = number3;
         }
 
-        for (int i = max; i > min; --i) {
+        for (int i = max - 1; i > min; --i) {
             System.out.print(i + " ");
         }
         System.out.println("\nmax = " + max);
