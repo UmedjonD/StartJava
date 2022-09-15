@@ -1,6 +1,5 @@
 public class Calculator {
     public static void main(String[] args) {
-
         int a = 10;
         int b = 5;
         double result = 0;
@@ -15,7 +14,7 @@ public class Calculator {
         } else if (sign == '/') {
             result = (double) a / b;
         } else if (sign == '^') {
-            result = a * a;
+            result = Math.pow(a, b);
         } else {
             result = a % b;
         }
